@@ -10,3 +10,8 @@
 .studies li {
     margin-top: 1.2rem
 }
+
+ul {
+    list-style: unset;
+    display: flex;
+}
