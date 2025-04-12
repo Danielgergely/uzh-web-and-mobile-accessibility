@@ -111,3 +111,27 @@ document.addEventListener('keydown', function (e) {
         });
     }
 });
+
+
+// this function is used to increase/decrease the font size
+(function () {
+  // get root element and let the current size be 100
+  const root = document.documentElement;
+  let currentSize = 100;
+
+  // then we update the value with + or - 10 for each click
+  function updateFontSize(change) {
+    currentSize = Math.min(200, Math.max(50, currentSize + change));
+    root.style.fontSize = currentSize + '%';
+  }
+
+  window.addEventListener('DOMContentLoaded', () => {
+    document.querySelectorAll('#font-increase-button, #font-increase-button-1').forEach(btn => {
+      btn.addEventListener('click', () => updateFontSize(10));
+    });
+
+    document.querySelectorAll('#font-decrease-button, #font-decrease-button-1').forEach(btn => {
+      btn.addEventListener('click', () => updateFontSize(-10));
+    });
+  });
+})();
