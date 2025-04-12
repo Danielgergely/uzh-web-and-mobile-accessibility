@@ -12,11 +12,11 @@
 </head>
 
 <body class="d-flex flex-column bg-light">
-    <div class="container-fluid d-none d-lg-block my-4 header">
+    <header class="container-fluid d-none d-lg-block my-4 header" role="banner">
         <div class="container">
             <div class="row no-gutters">
                 <div class="col-8 media">
-                    <a href="index.html">
+                    <a href="index.html" role="button">
                         <img class="align-self-center mr-3 rounded-right logo" src="./img/logo.jpg" alt="Lorem Ipsum Institute of Technology homepage">
                     </a>
                     <div class="media-body align-self-center">
@@ -35,79 +35,79 @@
                 </div>
             </div>
         </div>
-    </div>
+    </header>
 
-    <div class="container-fluid bg-dark nav">
+    <nav class="container-fluid bg-dark nav" role="navigation" aria-label="navigation">
         <div class="container">
             <div class="navbar navbar-dark bg-dark navbar-expand-lg px-0">
                 <div class="navbar-brand d-lg-none">
-                    <a href="index.html">
+                    <a href="index.html" role="button">
                         <img class="rounded-right" src="./img/logo.jpg" width="40" height="40" alt="Lorem Ipsum Institute of Technology homepage">
                     </a>
                 </div>
                 <button class="navbar-toggler" type="button">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse" id="nav-bar-content">
+                <div class="collapse navbar-collapse" id="nav-bar-content" aria-label="Main navigation">
                     <div class="navbar-nav mr-auto">
                         <div class="nav-item">
-                            <a class="nav-link" href="./">Homepage</a>
+                            <a class="nav-link" href="./" role="button">Homepage</a>
                         </div>
                         <div class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="javascript:void(0);" id="nav-bar-faculties">Faculties</a>
+                            <a class="nav-link dropdown-toggle" href="javascript:void(0);" id="nav-bar-faculties" role="button">Faculties</a>
                             <div class="dropdown-menu">
                                 <div>
-                                    <a class="dropdown-item" href="./empty.html?title=Applied+sciences">Applied sciences</a>
+                                    <a class="dropdown-item" href="./empty.html?title=Applied+sciences" role="button">Applied sciences</a>
                                 </div>
                                 <div>
-                                    <a class="dropdown-item" href="./empty.html?title=Architecture+%26+planning">Architecture &amp; planning</a>
+                                    <a class="dropdown-item" href="./empty.html?title=Architecture+%26+planning" role="button">Architecture &amp; planning</a>
                                 </div>
                                 <div>
                                     <a class="dropdown-item" href="./empty.html?title=Construction+%26+environment">Construction &amp; environment</a>
                                 </div>
                                 <div>
-                                    <a class="dropdown-item" href="./empty.html?title=Engineering">Engineering</a>
+                                    <a class="dropdown-item" href="./empty.html?title=Engineering" role="button">Engineering</a>
                                 </div>
                                 <div>
-                                    <a class="dropdown-item" href="./empty.html?title=Health+%26+social+sciences">Health &amp; social sciences</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="javascript:void(0);" id="nav-bar-education">Education &amp; research</a>
-                            <div class="dropdown-menu">
-                                <div>
-                                    <a class="dropdown-item" href="./empty.html?title=Bachelor">Bachelor</a>
-                                </div>
-                                <div>
-                                    <a class="dropdown-item" href="./empty.html?title=Master">Master</a>
-                                </div>
-                                <div>
-                                    <a class="dropdown-item" href="./empty.html?title=Continuing+education">Continuing education</a>
-                                </div>
-                                <div>
-                                    <a class="dropdown-item" href="./empty.html?title=Doctorate">Doctorate</a>
+                                    <a class="dropdown-item" href="./empty.html?title=Health+%26+social+sciences" role="button">Health &amp; social sciences</a>
                                 </div>
                             </div>
                         </div>
                         <div class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="javascript:void(0);" id="nav-bar-industry">Industry &amp; partners</a>
+                            <a class="nav-link dropdown-toggle" href="javascript:void(0);" id="nav-bar-education" role="button">Education &amp; research</a>
                             <div class="dropdown-menu">
                                 <div>
-                                    <a class="dropdown-item" href="./empty.html?title=Public+relations">Public relations</a>
+                                    <a class="dropdown-item" href="./empty.html?title=Bachelor" role="button">Bachelor</a>
                                 </div>
                                 <div>
-                                    <a class="dropdown-item" href="./empty.html?title=Commercialization">Commercialization</a>
+                                    <a class="dropdown-item" href="./empty.html?title=Master" role="button">Master</a>
                                 </div>
                                 <div>
-                                    <a class="dropdown-item" href="./empty.html?title=Sponsors+%26+partners">Sponsors &amp; partners</a>
+                                    <a class="dropdown-item" href="./empty.html?title=Continuing+education" role="button">Continuing education</a>
+                                </div>
+                                <div>
+                                    <a class="dropdown-item" href="./empty.html?title=Doctorate" role="button">Doctorate</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="javascript:void(0);" id="nav-bar-industry" role="button">Industry &amp; partners</a>
+                            <div class="dropdown-menu">
+                                <div>
+                                    <a class="dropdown-item" href="./empty.html?title=Public+relations" role="button">Public relations</a>
+                                </div>
+                                <div>
+                                    <a class="dropdown-item" href="./empty.html?title=Commercialization" role="button">Commercialization</a>
+                                </div>
+                                <div>
+                                    <a class="dropdown-item" href="./empty.html?title=Sponsors+%26+partners" role="button">Sponsors &amp; partners</a>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="navbar-nav">
                         <div class="nav-item">
-                            <a class="nav-link" href="./login.html">Login</a>
+                            <a class="nav-link" href="./login.html" role="button">Login</a>
                         </div>
                     </div>
                 </div>
@@ -115,18 +115,18 @@
             <div class="d-lg-none">
                 <div class="btn-toolbar justify-content-end">
                     <div class="btn-group btn-group-sm">
-                        <button class="btn btn-dark text-white font-increase-button" id="font-increase-button-1">A+</button>
-                        <button class="btn btn-dark text-white font-decrease-button" id="font-decrease-button-1">A-</button>
+                        <button class="btn btn-dark text-white font-increase-button" id="font-increase-button-1" aria-label="Increase font size">A+</button>
+                        <button class="btn btn-dark text-white font-decrease-button" id="font-decrease-button-1" aria-label="Decrease font size">A-</button>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
+    </nav>
 
-    <div class="container mt-4 main" id="main">
-        <div class="p-5 bg-white">
-            <div class="text-primary text-center mb-4 title">Global temperature record shows 2016 as the warmest year on record</div>
-            <div class="text-center wrapper">
+    <main class="container mt-4 main" id="main" role="main">
+        <article class="p-5 bg-white">
+            <header class="text-primary text-center mb-4 title">Global temperature record shows 2016 as the warmest year on record</header>
+            <section class="text-center wrapper">
                 <figure role="group" aria-labelledby="tempChartTitle">
                     <img src="./img/temperature.jpg" class="figure-img img-fluid" alt="Line chart of global average annual temperature">
                     <figcaption id="tempChartTitle">
@@ -134,14 +134,16 @@
                         <p class="figure-caption text-center text-secondary px-5">The graphic shows the global mean surface temperature change from 1880 to the present. The grey curve represents annual average temperatures, while the black curve shows a smoothed trend line. Over the last two centuries, the average temperature has increased by around 1 degree Celsius.</p>
                     </figcaption>
                 </figure>
-            </div>
+            </section>
+            <section>
             <p class="text-secondary">The global temperature record shows the fluctuations of the temperature of the atmosphere and the oceans through
                 various spans of time. The recently data published by NASA is one of the most detailed information exists
                 since 1850, when methodical thermometer-based records began.
             </p>
             <p class="text-secondary">Sixteen of the 17 warmest years in the 136-year record all have occurred since 2001, with the exception of 1998.
                 The year 2016 ranks as the warmest on record.</p>
-            <div class="table-responsive mt-4 wrapper">
+            </section>
+            <section class="table-responsive mt-4 wrapper">
                 <table class="table text-center text-secondary">
                     <caption>Global Average and Smoothed Temperatures by Year and Century</caption>
                     <thead class="thead-light">
@@ -191,21 +193,21 @@
                         </tr>
                     </tbody>
                 </table>
-            </div>
-        </div>
-    </div>
+            </section>
+        </article>
+    </main>
 
-    <div class="container-fluid bg-dark mt-4 footer">
+    <footer class="container-fluid bg-dark mt-4 footer" role="contentinfo">
         <div class="container text-center py-3">
             <div class="row justify-content-around">
-                <a class="col-12 col-md mr-3 text-white" href="./empty.html?title=About">About</a>
-                <a class="col-12 col-md mr-3 text-white" href="./empty.html?title=Contact+us">Contact us</a>
-                <a class="col-12 col-md mr-3 text-white" href="./empty.html?title=Help">Help</a>
-                <a class="col-12 col-md mr-3 text-white" href="./empty.html?title=Terms+of+services">Terms of service</a>
-                <a class="col-12 col-md mr-3 text-white" href="./empty.html?title=Privacy+policy">Privacy policy</a>
+                <a class="col-12 col-md mr-3 text-white" href="./empty.html?title=About" role="button">About</a>
+                <a class="col-12 col-md mr-3 text-white" href="./empty.html?title=Contact+us" role="button">Contact us</a>
+                <a class="col-12 col-md mr-3 text-white" href="./empty.html?title=Help" role="button">Help</a>
+                <a class="col-12 col-md mr-3 text-white" href="./empty.html?title=Terms+of+services" role="button">Terms of service</a>
+                <a class="col-12 col-md mr-3 text-white" href="./empty.html?title=Privacy+policy" role="button">Privacy policy</a>
             </div>
         </div>
-    </div>
+    </footer>
     
     <script type="text/javascript" src="./js/jquery.js"></script>
     <script type="text/javascript" src="./js/popper.js"></script>
