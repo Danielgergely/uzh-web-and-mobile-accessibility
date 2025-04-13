@@ -114,15 +114,19 @@ document.addEventListener('keydown', function (e) {
 
 
 // this function is used to increase/decrease the font size
+// if font size is changed on one page it should also be changed on other pages
 (function () {
-  // get root element and let the current size be 100
   const root = document.documentElement;
-  let currentSize = 100;
+  const FONT_SIZE_KEY = 'fontSizePercentage';
 
-  // then we update the value with + or - 10 for each click
+  // Load font size from localStorage if available
+  let currentSize = parseInt(localStorage.getItem(FONT_SIZE_KEY)) || 100;
+  root.style.fontSize = currentSize + '%';
+
   function updateFontSize(change) {
     currentSize = Math.min(200, Math.max(50, currentSize + change));
     root.style.fontSize = currentSize + '%';
+    localStorage.setItem(FONT_SIZE_KEY, currentSize);
   }
 
   window.addEventListener('DOMContentLoaded', () => {
@@ -135,3 +139,4 @@ document.addEventListener('keydown', function (e) {
     });
   });
 })();
+
