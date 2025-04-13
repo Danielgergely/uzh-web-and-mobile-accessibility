@@ -17,6 +17,29 @@ body a:hover {
     color: #cdcdcd
 }
 
+header .title, header .title * {
+    color: black !important;
+}
+
+nav * {
+    color: white !important;
+}
+
+nav .dropdown-menu {
+    background-color: white;
+    color: black;
+}
+
+nav .dropdown-menu a {
+    color: black !important;
+}
+
+nav .dropdown-menu a:hover,
+nav .dropdown-menu a:focus {
+    background-color: #333333;
+    color: white !important;
+}
+
 .title {
     font-size: 2rem;
     font-weight: 100
