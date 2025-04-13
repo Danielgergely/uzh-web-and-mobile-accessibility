@@ -15,3 +15,14 @@ ul {
     list-style: unset;
     display: flex;
 }
+
+
+.title, .title * {
+    color: black !important;
+}
+
+main, main * {
+    color: black !important;
+}
+
+

@@ -1,4 +1,9 @@
+.main, .main * {
+    color: black !important;
+}
+
 .main .wrapper {
     margin: auto;
-    width: 80%
+    width: 80%;
 }
+

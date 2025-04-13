@@ -1,1 +1,27 @@
+.main, .main * {
+    color: black !important;
+}
 
+.btn-primary {
+    background-color: #343a40 !important;
+    color: white !important; 
+}
+
+/* when hovering over button then color changes slightly to a ligher tone */
+.btn-primary:hover {
+    background-color: #495057 !important;
+    color: white !important; 
+    border-color: #adb5bd; 
+}
+
+/* border is thicker to enhance visibility */
+.form-control {
+    border: 3px solid #ced4da !important;
+    transition: border-color 0.3s ease-in-out;
+}
+
+/* Highlight input field with gray-dark border with a shadow when focused */
+.form-control:focus {
+    border-color: #343a40 !important; 
+    box-shadow: 0 0 5px rgba(52, 58, 64, 0.5) !important;
+}
