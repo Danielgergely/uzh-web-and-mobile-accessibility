@@ -1,9 +1,13 @@
 .main, .main * {
-    color: black !important;
+    color: black;
 }
 
 .main .wrapper {
     margin: auto;
     width: 80%;
+    margin-bottom: 3.5rem;
 }
 
+.main .article-text {
+    color: black;
+}

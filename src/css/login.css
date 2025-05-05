@@ -20,6 +20,10 @@
     transition: border-color 0.3s ease-in-out;
 }
 
+.form-control.is-invalid {
+    border-color: #dc3545 !important;
+}
+
 /* Highlight input field with gray-dark border with a shadow when focused */
 .form-control:focus {
     border-color: #343a40 !important; 
